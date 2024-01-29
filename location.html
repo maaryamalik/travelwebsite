@@ -1,0 +1,174 @@
+<!doctype html>
+<html>
+<head>
+ <title>Locations</title>
+ <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+ <style>
+/* Navbar */
+
+.header{
+  display:flex;
+  padding:10px;
+  background-color: #fff;                                                  /* (0 totally transperent 1 totally transperent) */
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);    /* Red,blue,green,half transperent( thura sa colour) */
+  align-items: center;
+
+
+}
+.logo img{
+  max-width:10%;
+}
+.nav-menu ul{
+  display: flex;
+}
+.nav-menu li{
+  list-style-type: none;
+
+}
+.nav-menu a:hover, .nav-menu li a:active{
+     text-decoration: underline;
+  color:orange;
+}
+.nav-menu a i:hover {
+  text-decoration: underline;
+  color:orange;
+}
+.nav-menu a{
+  text-decoration: none;
+  font-family:"Dongle-bold";
+  font-size:1.2rem;
+  margin: 20px;
+}
+
+
+  .destinations h2{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    color: orange;
+  }
+  p{
+    text-align: justify;
+  }
+    .destniation h1 {
+    text-align: center;
+     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 30px;
+    color: orange;
+    }
+  
+    .destinations img{
+       width:100%;
+       height:400px;
+    }
+    .destination-grid{
+     display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap: 40px;
+    }
+  .more{
+    display: none;
+  }
+  /*  buttons*/
+
+#myBtn1{
+        font-size: 15px;
+        cursor: pointer;
+        border-radius: 4px;
+       background-color:yellow;
+      }
+#myBtn{
+       font-size: 15px;
+        cursor: pointer;
+        border-radius: 4px;
+       background-color:yellow;
+      }
+#myBtns{
+        font-size: 15px;
+        cursor: pointer;
+        border-radius: 4px;
+     background-color:yellow;
+      }
+  /*  Footer */
+
+.footer-bottom {
+  color:blueviolet;
+  margin-top:40px;
+  margin-bottom: 0px;
+  margin-right:0px;
+  padding: 20px;
+  background-color: #fff;                                                  /* (0 totally transperent 1 totally transperent) */
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);    /* Red,blue,green,half transperent( thura sa colour) */
+  text-align: center;
+  font-display: bolder;
+}
+    </style>
+</head>
+<body>
+    <header class="header">
+      <div class="logo">
+      <img src="logo.jpg" alt="notload"></div>
+      <nav class="nav-menu">
+      <ul>
+         <li><a href="home.html">Home</a></li>
+         <li><a href="location.html">Locations</a></li>
+          <li><a href="home.html">About</a></li>
+          <li><a href="index.html">Contact</a></li>
+          <li><a href="reviews.html">Reviews</a></li>
+          <li><a href="login.html"><i class="fa fa-user" aria-hidden="true">Login</i></a></li>
+      </ul>
+      </nav>
+  </div>
+  </header>
+  <main>
+<section class="destniation">
+    <h1>Locations</h1>
+    <div class="destination-grid">
+        <div class="destinations">
+            <img src="gallerypic1.webp" alt="America">
+            <h2>America</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Praesentium eos consequuntur inventore ipsam, eaque aspernatur <span class="dot">...</span><span class="more">magnam similique. Aut, voluptatibus. Iusto, perspiciatis voluptas?Lorem ipsum dolor sit amet consectetur adipisicing elit. Eveniet quam sunt cum? Laudantium modi placeat ea odit suscipit blanditiis cupiditate nulla aliquam!
+            </span></p>
+            <button onclick="toggleText(this)" id="myBtn1">Read more</button>
+        </div>
+        <div class="destinations">
+            <img src="gallerypic2.jpg" alt="Tokoyo">
+           <h2>Tokoyo</h2>
+           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span class="dot">...</span><span class="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+
+           <button onclick="toggleText(this)" id="myBtn">Read more</button>
+        </div>
+        <div class="destinations">
+            <img src="gallerypic3.jpg" alt="Turkey" >
+            <h2>Turkey</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus imperdiet, nulla et dictum interdum, nisi lorem egestas vitae scel<span class="dot">...</span><span class="more">erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet. Nunc sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc venenatis imperdiet sed ornare turpis. Donec vitae dui eget tellus gravida venenatis. Integer fringilla congue eros non fermentum. Sed dapibus pulvinar nibh tempor porta.</span></p>
+
+            <button onclick="toggleText(this)" id="myBtns">Read more</button>
+        </div>
+      
+    </div>    
+</section>
+</main>
+<footer>
+    <div class="footer-bottom">
+        <h3>&copy; 2024 Travelaholic Website. All rights reserved.</h3>
+    </div>
+</footer>
+ <script>
+function toggleText(btnId) {
+  var dots = btnId.parentElement.querySelector(".dot");
+  var moreText = btnId.parentElement.querySelector(".more");
+  var btnText = btnId;
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
+  }
+}
+ </script>
+</body>
+</html>

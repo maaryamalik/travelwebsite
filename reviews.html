@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+
+ <style>
+/* Code for navbar */
+
+.header{
+  display:flex;
+  padding:10px;
+  background-color: #fff;                                                  /* (0 totally transperent 1 totally transperent) */
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);    /* Red,blue,green,half transperent( thura sa colour) */
+  align-items: center;
+
+
+}
+.logo img{
+  max-width:10%;
+}
+.nav-menu ul{
+  display: flex;
+}
+.nav-menu li{
+  list-style-type: none;
+
+}
+.nav-menu a:hover, .nav-menu li a:active{
+     text-decoration: underline;
+  color:orange;
+}
+.nav-menu a i:hover {
+  text-decoration: underline;
+  color:orange;
+}
+.nav-menu a{
+  text-decoration: none;
+  font-family:"Dongle-bold";
+  font-size:1.2rem;
+  margin: 20px;
+}
+
+ /* Code of review section */
+ body {
+      font-family: Arial, sans-serif;   
+      background-color: #f4f4f4;
+ }
+h1{
+    text-align:center ;
+    font-family:"Dongle-bold";
+    color: orange;
+    margin:80px;
+    font-size: 30px;
+}
+ #reviews{
+    margin:80px;
+    padding-top: 30px;
+    padding-bottom: 30px; 
+   /* background-color:lightyellow;  */
+    padding-left: 30px;
+ }
+
+#c1{
+    border-radius: 15px;
+     border-color: black;
+     background-color: antiquewhite;
+     margin-right: 30px;
+     padding: 10px 15px 10px 15px;
+}
+#c2{
+    border-radius: 15px;
+     border-color: black;
+     background-color: antiquewhite;
+     margin-right: 30px;
+    padding: 10px 15px 10px 15px;
+}
+#c3{
+    border-radius: 15px;
+     border-color: black;
+     background-color: antiquewhite;
+     margin-right: 30px;
+     padding: 10px 15px 10px 15px;
+}
+
+p{
+    text-align:justify ;
+    justify-content: left;
+    margin-right: 10px;
+}
+img{
+    
+   border-radius: 50px;
+    max-width:50px ;
+padding: 0px;
+
+    
+}
+.cards-container{
+     display: flex;
+    
+}
+.checked {
+  color: orange;
+}
+/* Footer */
+.contact-info {
+    list-style: none;
+    padding: 30px;
+    margin: 0px;
+    background-color: #f4f4f4;
+    }
+   .contact-info a {
+      text-decoration: none;
+      color: black;
+      display: flex;
+   }
+
+    .contact-info i {
+        margin-right: 8px;
+    }
+      
+ </style>
+    </head>
+    <body>
+        <header class="header">
+            <div class="logo">
+            <img src="logo.jpg" alt="notload"></div>
+            <nav class="nav-menu">
+            <ul>
+               <li><a href="home.html">Home</a></li>
+               <li><a href="location.html">Locations</a></li>
+                <li><a href="home.html">About</a></li>
+                <li><a href="index.html">Contact</a></li>
+                <li><a href="reviews.html">Reviews</a></li>
+                <li><a href="login.html"><i class="fa fa-user" aria-hidden="true">Login</i></a></li>
+            </ul>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <div>
+            <h1>Testominals</h1>
+        </div>
+<section id="reviews">
+<div class="cards-container" > 
+       <div class="cards" id="c1"> 
+            <img src="reviewpic1.jpeg"  alt=" " class="img-fluid"/>
+            <h4>Hoe Ousis</h4>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star"></span>
+               <span class="fa fa-star"></span>
+               <p> 
+                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, libero perferendis.
+                   Necessitatibus quidem alias ducimus beatae cum voluptatem accusamus eligendi.
+              </p>
+       </div>
+       <div class="cards" id="c2"> 
+               <img src="reviewpic2.jpeg"  alt=" " class="img-fluid"/>
+               <h4>Baris Baktas</h4>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star"></span>
+               <p> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, libero perferendis.
+                Necessitatibus quidem alias ducimus beatae cum voluptatem accusamus eligendi.
+              </p>
+       </div>
+       <div class="cards" id="c3"> 
+               <img src="reviewpic4.jpg"  alt=" " class="img-fluid"/>
+               <h4>Gokhan Alakh</h4>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+               <span class="fa fa-star checked"></span>
+                <span class="fa fa-star"></span>
+                <span class="fa fa-star"></span>
+               <p> 
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde, libero perferendis.
+                Necessitatibus quidem alias ducimus beatae cum voluptatem accusamus eligendi.
+              </p>
+       </div>
+</div>
+</section>
+</main>
+<footer>
+    <ul class="contact-info">
+      <li>
+          <a href="tel:111 222 222">
+            <i class="fa fa-phone" aria-hidden="true"></i>+111 222 222
+          </a><br>
+      </li>
+         <li>
+          <a href="https://www.google.com/maps?q=Cihangir, Güllabici Sk., 34433 Beyoğlu/İstanbul, Türkiye" target="_blank">
+            <i class="fa fa-map-marker" aria-hidden="true"></i>Turkey
+          </a><br>
+      </li>
+      <li>
+          <a href="mailto:info@travelaholic.com">
+            <i class="fa fa-envelope" aria-hidden="true"></i> info@travelaholic.com
+          </a><br>
+      </li>
+      <li>
+          <a href="https://twitter.com/travelaholic" target="_blank">
+            <i class="fa fa-twitter" aria-hidden="true"> </i>Twitter
+           </a><br>
+      </li>
+      <li>
+          <a href="https://www.facebook.com/travelaholic" target="_blank">
+            <i class="fa fa-facebook-official" aria-hidden="true"> </i>Facebook
+          </a><br>
+      </li>
+       <li>
+          <a href="https://www.instagram.com/travelaholic" target="_blank">
+            <i class="fa fa-instagram" aria-hidden="true"> </i>Instagram
+          </a><br>
+      </li>
+  </ul>
+</footer>
+    </body>
+</html>
